@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Портфолио" %} - {% trans "TechForge" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{% trans "Наши проекты" %}</h1>
+        <p class="page-subtitle">{% trans "Сайты, которые мы создали для строительных и промышленных компаний" %}</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        {% if projects %}
+        <div class="projects-grid">
+            {% for project in projects %}
+            <article class="project-card {% if project.featured %}featured{% endif %} animate-on-scroll fade-up stagger-animation hover-lift image-reveal">
+                <div class="project-image-wrapper">
+                    {% if project.get_image_url %}
+                    <img src="{{ project.get_image_url }}" alt="{{ project.title }}" class="project-image">
+                    {% else %}
+                    <div class="project-image-placeholder shimmer"></div>
+                    {% endif %}
+                    {% if project.featured %}
+                    <span class="featured-badge">{% trans "Избранное" %}</span>
+                    {% endif %}
+                </div>
+                <div class="project-info">
+                    <h3>{{ project.title }}</h3>
+                    <p class="project-description">{{ project.description }}</p>
+                    <div class="project-meta">
+                        <span class="project-tech">{{ project.technologies }}</span>
+                        <span class="project-date">{{ project.completed_date|date:"F Y" }}</span>
+                    </div>
+                    {% if project.url %}
+                    <a href="{{ project.url }}" target="_blank" rel="noopener" class="btn btn-secondary btn-small">
+                        {% trans "Перейти на сайт" %}
+                    </a>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <p>{% trans "Проекты скоро появятся. Следите за обновлениями!" %}</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container cta-content">
+        <h2>{% trans "Есть проект для нас?" %}</h2>
+        <p>{% trans "Давайте обсудим, как мы можем помочь вашему бизнесу." %}</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary">{% trans "Обсудить проект" %}</a>
+    </div>
+</section>
+{% endblock %}

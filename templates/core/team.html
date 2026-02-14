@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Команда" %} - {% trans "TechForge" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{% trans "Наша команда" %}</h1>
+        <p class="page-subtitle">{% trans "Профессионалы, которые создают ваши проекты" %}</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        {% if team_members %}
+        <div class="team-grid">
+            {% for member in team_members %}
+            <article class="team-card animate-on-scroll scale-in stagger-animation card-3d hover-lift">
+                <div class="team-photo">
+                    {% if member.get_photo_url %}
+                    <img src="{{ member.get_photo_url }}" alt="{{ member.name }}">
+                    {% else %}
+                    <div class="photo-placeholder">
+                        <span>{{ member.name|slice:":1" }}</span>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="team-info">
+                    <h3>{{ member.name }}</h3>
+                    <span class="team-position">{{ member.position }}</span>
+                    <p class="team-bio">{{ member.bio|truncatewords:25 }}</p>
+                    <div class="team-links">
+                        {% if member.email %}
+                        <a href="mailto:{{ member.email }}" class="team-link" aria-label="{% trans 'Email' %}">&#9993;</a>
+                        {% endif %}
+                        {% if member.linkedin %}
+                        <a href="{{ member.linkedin }}" target="_blank" rel="noopener" class="team-link" aria-label="LinkedIn">in</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <p>{% trans "Информация о команде скоро появится." %}</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container cta-content">
+        <h2>{% trans "Хотите присоединиться к команде?" %}</h2>
+        <p>{% trans "Мы всегда рады талантливым специалистам. Напишите нам!" %}</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary">{% trans "Связаться" %}</a>
+    </div>
+</section>
+{% endblock %}

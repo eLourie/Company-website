@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "О компании" %} - {% trans "TechForge" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{% trans "О компании" %}</h1>
+        <p class="page-subtitle">{% trans "Корпоративные веб-решения для крупного бизнеса" %}</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2>{% trans "Наша история" %}</h2>
+                <p>{% trans "TechForge — технологическая компания, создающая корпоративные веб-платформы для B2B-сектора. Мы начинали как команда разработчиков, работавших с крупными производственными холдингами, строительными компаниями и промышленными предприятиями." %}</p>
+                <p>{% trans "За 12 лет работы мы накопили глубокую экспертизу в корпоративном сегменте: понимаем, как устроены бизнес-процессы крупных компаний, знаем требования к безопасности и интеграциям с корпоративными системами. Это позволяет создавать решения, которые действительно работают на бизнес." %}</p>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">{% trans "Наша миссия" %}</h2>
+        <div class="mission-content">
+            <p class="mission-text">{% trans "Помогать крупному бизнесу в цифровой трансформации: создавать B2B-порталы, корпоративные платформы и системы, которые повышают эффективность работы с клиентами и партнёрами." %}</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">{% trans "Наши ценности" %}</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">&#127970;</div>
+                <h3>{% trans "B2B экспертиза" %}</h3>
+                <p>{% trans "Глубоко понимаем специфику корпоративного сектора, производства и промышленности." %}</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">&#129309;</div>
+                <h3>{% trans "Партнёрство" %}</h3>
+                <p>{% trans "Относимся к проектам клиентов как к своим собственным." %}</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">&#10003;</div>
+                <h3>{% trans "Качество" %}</h3>
+                <p>{% trans "Каждый проект проходит тщательное тестирование перед запуском." %}</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">&#128161;</div>
+                <h3>{% trans "Прозрачность" %}</h3>
+                <p>{% trans "Честные сроки, понятные цены, открытая коммуникация на всех этапах." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">{% trans "Почему мы" %}</h2>
+        <div class="reasons-grid">
+            <div class="reason-item">
+                <span class="reason-number">01</span>
+                <h3>{% trans "Корпоративный опыт" %}</h3>
+                <p>{% trans "Работаем с крупным бизнесом: производственными компаниями, строительными холдингами, B2B-порталами." %}</p>
+            </div>
+            <div class="reason-item">
+                <span class="reason-number">02</span>
+                <h3>{% trans "Полный цикл" %}</h3>
+                <p>{% trans "От проектирования до запуска и технической поддержки — всё в одних руках." %}</p>
+            </div>
+            <div class="reason-item">
+                <span class="reason-number">03</span>
+                <h3>{% trans "Интеграции" %}</h3>
+                <p>{% trans "Подключаем 1С, SAP, CRM-системы, ERP и другие корпоративные системы." %}</p>
+            </div>
+            <div class="reason-item">
+                <span class="reason-number">04</span>
+                <h3>{% trans "Поддержка 24/7" %}</h3>
+                <p>{% trans "Техническая поддержка и оперативное решение любых вопросов после запуска." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

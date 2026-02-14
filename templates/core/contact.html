@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Контакты" %} - {% trans "TechForge" %}{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{% trans "Контакты" %}</h1>
+        <p class="page-subtitle">{% trans "Свяжитесь с нами для обсуждения вашего проекта" %}</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-form-wrapper">
+                <h2>{% trans "Отправить заявку" %}</h2>
+
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_name">{% trans "Ваше имя" %}</label>
+                        {{ form.name }}
+                        {% if form.name.errors %}
+                        <span class="error">{{ form.name.errors.0 }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_email">{% trans "Email" %}</label>
+                        {{ form.email }}
+                        {% if form.email.errors %}
+                        <span class="error">{{ form.email.errors.0 }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_subject">{% trans "Тема" %}</label>
+                        {{ form.subject }}
+                        {% if form.subject.errors %}
+                        <span class="error">{{ form.subject.errors.0 }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_message">{% trans "Сообщение" %}</label>
+                        {{ form.message }}
+                        {% if form.message.errors %}
+                        <span class="error">{{ form.message.errors.0 }}</span>
+                        {% endif %}
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">{% trans "Отправить" %}</button>
+                </form>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <h2>{% trans "Контактная информация" %}</h2>
+
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <span class="contact-icon">&#128205;</span>
+                        <div>
+                            <h4>{% trans "Адрес" %}</h4>
+                            <p>{% trans "г. Москва, Красная площадь, д. 1" %}<br>109012, {% trans "Россия" %}</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon">&#128222;</span>
+                        <div>
+                            <h4>{% trans "Телефон" %}</h4>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon">&#9993;</span>
+                        <div>
+                            <h4>{% trans "Email" %}</h4>
+                            <p>info@techforge.io</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon">&#128337;</span>
+                        <div>
+                            <h4>{% trans "Режим работы" %}</h4>
+                            <p>{% trans "Понедельник — Пятница: 9:00 — 18:00" %}<br>
+                               {% trans "Суббота — Воскресенье: Выходной" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h4>{% trans "Мы в соцсетях" %}</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Telegram">TG</a>
+                        <a href="#" aria-label="VKontakte">VK</a>
+                        <a href="#" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <div id="yandex-map" style="width: 100%; height: 400px;"></div>
+</section>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш-api-ключ&lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map("yandex-map", {
+            center: [55.753994, 37.620940],
+            zoom: 16
+        });
+
+        var myPlacemark = new ymaps.Placemark([55.753994, 37.620940], {
+            hintContent: '{% trans "TechForge" %}',
+            balloonContent: '{% trans "Веб-студия TechForge" %}<br>{% trans "г. Москва, Красная площадь, д. 1" %}'
+        }, {
+            preset: 'islands#redDotIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+    }
+</script>
+{% endblock %}

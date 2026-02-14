@@ -1,0 +1,792 @@
+# Russian translations for Company Website
+# Copyright (C) 2024
+# This file is distributed under the same license as the company_site package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: company_site 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-14 19:42+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: core/forms.py:13
+msgid "Your Name"
+msgstr "Ваше имя"
+
+#: core/forms.py:17
+msgid "Your Email"
+msgstr "Ваш Email"
+
+#: core/forms.py:21 core/models.py:62
+msgid "Subject"
+msgstr "Тема"
+
+#: core/forms.py:25
+msgid "Your Message"
+msgstr "Ваше сообщение"
+
+#: core/models.py:6 core/models.py:60
+#, fuzzy
+#| msgid "Your Name"
+msgid "Name"
+msgstr "Ваше имя"
+
+#: core/models.py:7
+msgid "Position"
+msgstr ""
+
+#: core/models.py:8
+msgid "Biography"
+msgstr ""
+
+#: core/models.py:9
+msgid "Photo"
+msgstr ""
+
+#: core/models.py:10
+msgid "Photo URL"
+msgstr ""
+
+#: core/models.py:10
+msgid "External photo URL (takes priority over uploaded photo)"
+msgstr ""
+
+#: core/models.py:11 core/models.py:61 templates/core/contact.html:40
+#: templates/core/contact.html:87 templates/core/partials/footer.html:24
+#: templates/core/team.html:35
+msgid "Email"
+msgstr "Email"
+
+#: core/models.py:12
+msgid "LinkedIn"
+msgstr ""
+
+#: core/models.py:13
+msgid "Order"
+msgstr ""
+
+#: core/models.py:24
+msgid "Team Member"
+msgstr ""
+
+#: core/models.py:25
+msgid "Team Members"
+msgstr ""
+
+#: core/models.py:33
+msgid "Title"
+msgstr ""
+
+#: core/models.py:34
+msgid "Description"
+msgstr ""
+
+#: core/models.py:35
+msgid "Image"
+msgstr ""
+
+#: core/models.py:36
+msgid "Image URL"
+msgstr ""
+
+#: core/models.py:36
+msgid "External image URL (takes priority over uploaded image)"
+msgstr ""
+
+#: core/models.py:37
+msgid "URL"
+msgstr ""
+
+#: core/models.py:38
+#, fuzzy
+#| msgid "Modern Technologies"
+msgid "Technologies"
+msgstr "Современные технологии"
+
+#: core/models.py:39
+msgid "Completed Date"
+msgstr ""
+
+#: core/models.py:40
+msgid "Featured"
+msgstr "Избранный"
+
+#: core/models.py:51
+#, fuzzy
+#| msgid "Projects"
+msgid "Project"
+msgstr "Проекты"
+
+#: core/models.py:52
+msgid "Projects"
+msgstr "Проекты"
+
+#: core/models.py:63
+msgid "Message"
+msgstr "Сообщение"
+
+#: core/models.py:64
+msgid "Created At"
+msgstr ""
+
+#: core/models.py:65
+msgid "Is Read"
+msgstr ""
+
+#: core/models.py:68
+#, fuzzy
+#| msgid "Contact Us"
+msgid "Contact Message"
+msgstr "Связаться с нами"
+
+#: core/models.py:69
+#, fuzzy
+#| msgid "Contact Us"
+msgid "Contact Messages"
+msgstr "Связаться с нами"
+
+#: core/views.py:38
+msgid "Your message has been sent successfully!"
+msgstr "Ваше сообщение успешно отправлено!"
+
+#: templates/base.html:7
+msgid "СтройДиджитал — веб-студия для строительных и промышленных компаний. Создаём корпоративные сайты, каталоги и B2B-порталы."
+msgstr ""
+
+#: templates/base.html:8 templates/core/about.html:4
+#: templates/core/contact.html:4 templates/core/contact.html:129
+#: templates/core/home.html:4 templates/core/partials/footer.html:6
+#: templates/core/partials/footer.html:41 templates/core/partials/navbar.html:5
+#: templates/core/projects.html:4 templates/core/team.html:4
+msgid "СтройДиджитал"
+msgstr ""
+
+#: templates/core/about.html:4 templates/core/about.html:9
+msgid "О компании"
+msgstr ""
+
+#: templates/core/about.html:10
+msgid "Веб-студия для строительной и промышленной отрасли"
+msgstr ""
+
+#: templates/core/about.html:18
+msgid "Наша история"
+msgstr ""
+
+#: templates/core/about.html:19
+msgid "СтройДиджитал — веб-студия, специализирующаяся на создании сайтов для компаний строительной и промышленной отрасли. Мы начинали как небольшая команда разработчиков, которые работали с крупными строительными холдингами и заводами."
+msgstr ""
+
+#: templates/core/about.html:20
+msgid "За годы работы мы накопили экспертизу в отрасли: понимаем, как устроены бизнес-процессы застройщиков, производственных предприятий и B2B-компаний. Это позволяет нам создавать сайты, которые действительно работают на бизнес клиента."
+msgstr ""
+
+#: templates/core/about.html:31
+msgid "Наша миссия"
+msgstr ""
+
+#: templates/core/about.html:33
+msgid "Помогать строительным и промышленным компаниям эффективно представлять себя в интернете, привлекать клиентов и партнёров с помощью современных цифровых решений."
+msgstr ""
+
+#: templates/core/about.html:40
+msgid "Наши ценности"
+msgstr ""
+
+#: templates/core/about.html:44
+msgid "Отраслевая экспертиза"
+msgstr ""
+
+#: templates/core/about.html:45
+msgid "Мы глубоко понимаем специфику строительного и промышленного бизнеса."
+msgstr ""
+
+#: templates/core/about.html:49
+msgid "Партнёрство"
+msgstr ""
+
+#: templates/core/about.html:50
+msgid "Относимся к проектам клиентов как к своим собственным."
+msgstr ""
+
+#: templates/core/about.html:54
+msgid "Качество"
+msgstr ""
+
+#: templates/core/about.html:55
+msgid "Каждый проект проходит тщательное тестирование перед запуском."
+msgstr ""
+
+#: templates/core/about.html:59
+msgid "Прозрачность"
+msgstr ""
+
+#: templates/core/about.html:60
+msgid "Честные сроки, понятные цены, открытая коммуникация на всех этапах."
+msgstr ""
+
+#: templates/core/about.html:68
+msgid "Почему мы"
+msgstr ""
+
+#: templates/core/about.html:72
+msgid "Знаем отрасль"
+msgstr ""
+
+#: templates/core/about.html:73
+msgid "Работаем только со строительными и промышленными компаниями — понимаем вашу специфику."
+msgstr ""
+
+#: templates/core/about.html:77
+msgid "Полный цикл"
+msgstr ""
+
+#: templates/core/about.html:78
+msgid "От проектирования до запуска и технической поддержки — всё в одних руках."
+msgstr ""
+
+#: templates/core/about.html:82
+msgid "Интеграции"
+msgstr ""
+
+#: templates/core/about.html:83
+msgid "Подключаем 1С, Битрикс24, amoCRM и другие системы, которые вы используете."
+msgstr ""
+
+#: templates/core/about.html:87
+msgid "Поддержка 24/7"
+msgstr ""
+
+#: templates/core/about.html:88
+msgid "Техническая поддержка и оперативное решение любых вопросов после запуска."
+msgstr ""
+
+#: templates/core/contact.html:4 templates/core/contact.html:9
+#: templates/core/partials/footer.html:17
+#: templates/core/partials/footer.html:22
+#: templates/core/partials/navbar.html:19
+msgid "Контакты"
+msgstr ""
+
+#: templates/core/contact.html:10
+msgid "Свяжитесь с нами для обсуждения вашего проекта"
+msgstr ""
+
+#: templates/core/contact.html:18
+msgid "Отправить заявку"
+msgstr ""
+
+#: templates/core/contact.html:33
+msgid "Ваше имя"
+msgstr ""
+
+#: templates/core/contact.html:47
+msgid "Тема"
+msgstr ""
+
+#: templates/core/contact.html:54
+msgid "Сообщение"
+msgstr ""
+
+#: templates/core/contact.html:60
+msgid "Отправить"
+msgstr ""
+
+#: templates/core/contact.html:65
+msgid "Контактная информация"
+msgstr ""
+
+#: templates/core/contact.html:71 templates/core/partials/footer.html:26
+msgid "Адрес"
+msgstr ""
+
+#: templates/core/contact.html:72 templates/core/contact.html:130
+msgid "г. Москва, Красная площадь, д. 1"
+msgstr ""
+
+#: templates/core/contact.html:72
+msgid "Россия"
+msgstr ""
+
+#: templates/core/contact.html:79 templates/core/partials/footer.html:25
+msgid "Телефон"
+msgstr ""
+
+#: templates/core/contact.html:95
+msgid "Режим работы"
+msgstr ""
+
+#: templates/core/contact.html:96
+msgid "Понедельник — Пятница: 9:00 — 18:00"
+msgstr ""
+
+#: templates/core/contact.html:97
+msgid "Суббота — Воскресенье: Выходной"
+msgstr ""
+
+#: templates/core/contact.html:103
+msgid "Мы в соцсетях"
+msgstr ""
+
+#: templates/core/contact.html:130
+msgid "Веб-студия СтройДиджитал"
+msgstr ""
+
+#: templates/core/home.html:4 templates/core/partials/footer.html:13
+#: templates/core/partials/navbar.html:15
+msgid "Главная"
+msgstr ""
+
+#: templates/core/home.html:15
+msgid "Создаём сайты для строительных и промышленных компаний"
+msgstr ""
+
+#: templates/core/home.html:16
+msgid "Веб-студия СтройДиджитал — разрабатываем современные корпоративные сайты, которые работают на ваш бизнес и привлекают клиентов."
+msgstr ""
+
+#: templates/core/home.html:18
+msgid "Наши работы"
+msgstr ""
+
+#: templates/core/home.html:19
+msgid "Заказать сайт"
+msgstr ""
+
+#: templates/core/home.html:31
+msgid "Реализованных проектов"
+msgstr ""
+
+#: templates/core/home.html:36
+msgid "Довольных клиентов"
+msgstr ""
+
+#: templates/core/home.html:41
+msgid "Лет на рынке"
+msgstr ""
+
+#: templates/core/home.html:49
+msgid "Что мы делаем"
+msgstr ""
+
+#: templates/core/home.html:53
+msgid "Сайты для застройщиков"
+msgstr ""
+
+#: templates/core/home.html:54
+msgid "Корпоративные сайты и каталоги объектов для строительных компаний, девелоперов и застройщиков."
+msgstr ""
+
+#: templates/core/home.html:58
+msgid "Промышленные порталы"
+msgstr ""
+
+#: templates/core/home.html:59
+msgid "Сайты для производственных предприятий, заводов и промышленных холдингов с каталогами продукции."
+msgstr ""
+
+#: templates/core/home.html:63
+msgid "B2B-решения"
+msgstr ""
+
+#: templates/core/home.html:64
+msgid "Личные кабинеты для дилеров, системы заказов и интеграции с 1С и CRM-системами."
+msgstr ""
+
+#: templates/core/home.html:73
+msgid "Почему выбирают нас"
+msgstr ""
+
+#: templates/core/home.html:77
+msgid "Специализация"
+msgstr ""
+
+#: templates/core/home.html:78
+msgid "Работаем только со строительной и промышленной отраслью — понимаем специфику вашего бизнеса."
+msgstr ""
+
+#: templates/core/home.html:82
+msgid "Современные технологии"
+msgstr ""
+
+#: templates/core/home.html:83
+msgid "Django, React, адаптивный дизайн, быстрая загрузка и SEO-оптимизация из коробки."
+msgstr ""
+
+#: templates/core/home.html:87
+msgid "Поддержка"
+msgstr ""
+
+#: templates/core/home.html:88
+msgid "Техническая поддержка и развитие сайта после запуска. Ваш проект всегда в надёжных руках."
+msgstr ""
+
+#: templates/core/home.html:97
+msgid "Избранные проекты"
+msgstr ""
+
+#: templates/core/home.html:115
+msgid "Все проекты"
+msgstr ""
+
+#: templates/core/home.html:124
+msgid "Технологии, которые мы используем"
+msgstr ""
+
+#: templates/core/home.html:156
+msgid "Готовы обсудить ваш проект?"
+msgstr ""
+
+#: templates/core/home.html:157
+msgid "Оставьте заявку — мы свяжемся с вами и подготовим коммерческое предложение."
+msgstr ""
+
+#: templates/core/home.html:158
+msgid "Оставить заявку"
+msgstr ""
+
+#: templates/core/partials/footer.html:7
+msgid "Создаём современные сайты для строительных и промышленных компаний."
+msgstr ""
+
+#: templates/core/partials/footer.html:11
+msgid "Навигация"
+msgstr ""
+
+#: templates/core/partials/footer.html:14
+#: templates/core/partials/navbar.html:16
+msgid "О нас"
+msgstr ""
+
+#: templates/core/partials/footer.html:15
+#: templates/core/partials/navbar.html:17 templates/core/team.html:4
+msgid "Команда"
+msgstr ""
+
+#: templates/core/partials/footer.html:16
+#: templates/core/partials/navbar.html:18
+msgid "Проекты"
+msgstr ""
+
+#: templates/core/partials/footer.html:26
+msgid "Москва, Красная площадь, 1"
+msgstr ""
+
+#: templates/core/partials/footer.html:31
+msgid "Соцсети"
+msgstr ""
+
+#: templates/core/partials/footer.html:41
+msgid "Все права защищены."
+msgstr ""
+
+#: templates/core/partials/navbar.html:8
+msgid "Открыть меню"
+msgstr ""
+
+#: templates/core/partials/navbar.html:24
+msgid "Выбрать язык"
+msgstr ""
+
+#: templates/core/partials/navbar.html:41
+msgid "Переключить тему"
+msgstr ""
+
+#: templates/core/projects.html:4
+msgid "Портфолио"
+msgstr ""
+
+#: templates/core/projects.html:9
+msgid "Наши проекты"
+msgstr ""
+
+#: templates/core/projects.html:10
+msgid "Сайты, которые мы создали для строительных и промышленных компаний"
+msgstr ""
+
+#: templates/core/projects.html:27
+msgid "Избранное"
+msgstr ""
+
+#: templates/core/projects.html:39
+msgid "Перейти на сайт"
+msgstr ""
+
+#: templates/core/projects.html:48
+msgid "Проекты скоро появятся. Следите за обновлениями!"
+msgstr ""
+
+#: templates/core/projects.html:56
+msgid "Есть проект для нас?"
+msgstr ""
+
+#: templates/core/projects.html:57
+msgid "Давайте обсудим, как мы можем помочь вашему бизнесу."
+msgstr ""
+
+#: templates/core/projects.html:58
+msgid "Обсудить проект"
+msgstr ""
+
+#: templates/core/team.html:9
+msgid "Наша команда"
+msgstr ""
+
+#: templates/core/team.html:10
+msgid "Профессионалы, которые создают ваши проекты"
+msgstr ""
+
+#: templates/core/team.html:47
+msgid "Информация о команде скоро появится."
+msgstr ""
+
+#: templates/core/team.html:55
+msgid "Хотите присоединиться к команде?"
+msgstr ""
+
+#: templates/core/team.html:56
+msgid "Мы всегда рады талантливым специалистам. Напишите нам!"
+msgstr ""
+
+#: templates/core/team.html:57
+msgid "Связаться"
+msgstr ""
+
+# Navigation
+#~ msgid "Company Name"
+#~ msgstr "Название Компании"
+
+#~ msgid "Home"
+#~ msgstr "Главная"
+
+#~ msgid "About"
+#~ msgstr "О нас"
+
+#~ msgid "Team"
+#~ msgstr "Команда"
+
+#~ msgid "Contact"
+#~ msgstr "Контакты"
+
+#~ msgid "Toggle menu"
+#~ msgstr "Переключить меню"
+
+#~ msgid "Select language"
+#~ msgstr "Выбрать язык"
+
+#~ msgid "Toggle theme"
+#~ msgstr "Переключить тему"
+
+# Hero Section
+#~ msgid "Welcome to Company Name"
+#~ msgstr "Добро пожаловать в Название Компании"
+
+#~ msgid "We build innovative digital solutions that transform businesses and delight users."
+#~ msgstr "Мы создаём инновационные цифровые решения, которые трансформируют бизнес и радуют пользователей."
+
+#~ msgid "View Our Work"
+#~ msgstr "Наши работы"
+
+#~ msgid "Get in Touch"
+#~ msgstr "Связаться с нами"
+
+# What We Do Section
+#~ msgid "What We Do"
+#~ msgstr "Что мы делаем"
+
+#~ msgid "Web Development"
+#~ msgstr "Веб-разработка"
+
+#~ msgid "Custom web applications built with modern technologies and best practices."
+#~ msgstr "Веб-приложения на заказ с использованием современных технологий и лучших практик."
+
+#~ msgid "Mobile Apps"
+#~ msgstr "Мобильные приложения"
+
+#~ msgid "Native and cross-platform mobile applications for iOS and Android."
+#~ msgstr "Нативные и кроссплатформенные мобильные приложения для iOS и Android."
+
+#~ msgid "Cloud Solutions"
+#~ msgstr "Облачные решения"
+
+#~ msgid "Scalable cloud infrastructure and DevOps services."
+#~ msgstr "Масштабируемая облачная инфраструктура и DevOps сервисы."
+
+# Featured Projects
+#~ msgid "Featured Projects"
+#~ msgstr "Избранные проекты"
+
+#~ msgid "View All Projects"
+#~ msgstr "Все проекты"
+
+# CTA Section
+#~ msgid "Ready to Start Your Project?"
+#~ msgstr "Готовы начать проект?"
+
+#~ msgid "Let's discuss how we can help bring your ideas to life."
+#~ msgstr "Давайте обсудим, как мы можем воплотить ваши идеи в жизнь."
+
+# About Page
+#~ msgid "About Us"
+#~ msgstr "О нас"
+
+#~ msgid "Learn more about our company and mission"
+#~ msgstr "Узнайте больше о нашей компании и миссии"
+
+#~ msgid "Our Story"
+#~ msgstr "Наша история"
+
+#~ msgid "Founded with a passion for technology and innovation, we have been helping businesses transform their digital presence since our inception. Our journey began with a simple idea: make technology accessible and impactful for everyone."
+#~ msgstr "Основанная с страстью к технологиям и инновациям, наша компания помогает бизнесу трансформировать своё цифровое присутствие с момента основания. Наш путь начался с простой идеи: сделать технологии доступными и значимыми для всех."
+
+#~ msgid "Over the years, we have grown from a small team of enthusiasts to a full-service digital agency, serving clients across various industries worldwide."
+#~ msgstr "За годы работы мы выросли из небольшой команды энтузиастов в полноценное цифровое агентство, обслуживающее клиентов из различных отраслей по всему миру."
+
+#~ msgid "Our Mission"
+#~ msgstr "Наша миссия"
+
+#~ msgid "To empower businesses with innovative digital solutions that drive growth, efficiency, and success in an ever-evolving technological landscape."
+#~ msgstr "Расширять возможности бизнеса с помощью инновационных цифровых решений, которые способствуют росту, эффективности и успеху в постоянно меняющемся технологическом ландшафте."
+
+#~ msgid "Our Values"
+#~ msgstr "Наши ценности"
+
+#~ msgid "Innovation"
+#~ msgstr "Инновации"
+
+#~ msgid "We constantly explore new technologies and approaches to deliver cutting-edge solutions."
+#~ msgstr "Мы постоянно изучаем новые технологии и подходы для создания передовых решений."
+
+#~ msgid "Collaboration"
+#~ msgstr "Сотрудничество"
+
+#~ msgid "We work closely with our clients, treating their goals as our own."
+#~ msgstr "Мы тесно работаем с нашими клиентами, относясь к их целям как к своим собственным."
+
+#~ msgid "Quality"
+#~ msgstr "Качество"
+
+#~ msgid "We never compromise on quality, delivering excellence in every project."
+#~ msgstr "Мы никогда не идём на компромисс в качестве, обеспечивая превосходство в каждом проекте."
+
+#~ msgid "Integrity"
+#~ msgstr "Честность"
+
+#~ msgid "We operate with transparency and honesty in all our interactions."
+#~ msgstr "Мы работаем прозрачно и честно во всех наших взаимодействиях."
+
+#~ msgid "Why Choose Us"
+#~ msgstr "Почему мы"
+
+#~ msgid "Experienced Team"
+#~ msgstr "Опытная команда"
+
+#~ msgid "Our team consists of seasoned professionals with years of industry experience."
+#~ msgstr "Наша команда состоит из опытных профессионалов с многолетним опытом работы в отрасли."
+
+#~ msgid "We use the latest technologies and follow industry best practices."
+#~ msgstr "Мы используем новейшие технологии и следуем лучшим отраслевым практикам."
+
+#~ msgid "Client-Focused"
+#~ msgstr "Клиентоориентированность"
+
+#~ msgid "Your success is our priority. We tailor solutions to meet your specific needs."
+#~ msgstr "Ваш успех — наш приоритет. Мы создаём решения, отвечающие вашим конкретным потребностям."
+
+#~ msgid "Ongoing Support"
+#~ msgstr "Постоянная поддержка"
+
+#~ msgid "We provide continuous support and maintenance after project completion."
+#~ msgstr "Мы обеспечиваем постоянную поддержку и обслуживание после завершения проекта."
+
+# Team Page
+#~ msgid "Our Team"
+#~ msgstr "Наша команда"
+
+#~ msgid "Meet the talented people behind our success"
+#~ msgstr "Познакомьтесь с талантливыми людьми, стоящими за нашим успехом"
+
+#~ msgid "Team information coming soon."
+#~ msgstr "Информация о команде скоро появится."
+
+#~ msgid "Want to Join Our Team?"
+#~ msgstr "Хотите присоединиться к нашей команде?"
+
+#~ msgid "We're always looking for talented individuals to join our growing team."
+#~ msgstr "Мы всегда ищем талантливых специалистов для нашей растущей команды."
+
+# Projects Page
+#~ msgid "Our Projects"
+#~ msgstr "Наши проекты"
+
+#~ msgid "Explore our portfolio of successful projects"
+#~ msgstr "Ознакомьтесь с нашим портфолио успешных проектов"
+
+#~ msgid "View Project"
+#~ msgstr "Смотреть проект"
+
+#~ msgid "Projects coming soon. Check back later!"
+#~ msgstr "Проекты скоро появятся. Загляните позже!"
+
+#~ msgid "Have a Project in Mind?"
+#~ msgstr "Есть идея проекта?"
+
+#~ msgid "Let's discuss how we can help bring your vision to reality."
+#~ msgstr "Давайте обсудим, как мы можем воплотить вашу идею в реальность."
+
+#~ msgid "Start a Conversation"
+#~ msgstr "Начать разговор"
+
+# Contact Page
+#~ msgid "Get in touch with our team"
+#~ msgstr "Свяжитесь с нашей командой"
+
+#~ msgid "Send Us a Message"
+#~ msgstr "Отправить сообщение"
+
+#~ msgid "Send Message"
+#~ msgstr "Отправить"
+
+#~ msgid "Contact Information"
+#~ msgstr "Контактная информация"
+
+#~ msgid "Address"
+#~ msgstr "Адрес"
+
+#~ msgid "Phone"
+#~ msgstr "Телефон"
+
+#~ msgid "Business Hours"
+#~ msgstr "Часы работы"
+
+#~ msgid "Monday - Friday: 9:00 AM - 6:00 PM"
+#~ msgstr "Понедельник - Пятница: 9:00 - 18:00"
+
+#~ msgid "Saturday - Sunday: Closed"
+#~ msgstr "Суббота - Воскресенье: Выходной"
+
+#~ msgid "Follow Us"
+#~ msgstr "Мы в соцсетях"
+
+#~ msgid "Map placeholder - integrate with Google Maps or other map service"
+#~ msgstr "Место для карты - интегрируйте с Google Maps или другим сервисом карт"
+
+# Footer
+#~ msgid "Building innovative solutions for tomorrow's challenges."
+#~ msgstr "Создаём инновационные решения для задач будущего."
+
+#~ msgid "Quick Links"
+#~ msgstr "Быстрые ссылки"
+
+#~ msgid "Contact Info"
+#~ msgstr "Контакты"
+
+#~ msgid "All rights reserved."
+#~ msgstr "Все права защищены."

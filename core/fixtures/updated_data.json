@@ -1,0 +1,140 @@
+[
+    {
+        "model": "core.project",
+        "pk": 1,
+        "fields": {
+            "title": "СК «Монолит»",
+            "description": "Корпоративный сайт для крупной строительной компании. Каталог объектов недвижимости с фильтрацией, интерактивные планировки квартир, интеграция с CRM для обработки заявок. Адаптивный дизайн и высокая скорость загрузки.",
+            "technologies": "Django, PostgreSQL, Redis, Яндекс.Карты",
+            "completed_date": "2024-11-15",
+            "featured": true,
+            "url": "https://example.com/monolit",
+            "image_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 2,
+        "fields": {
+            "title": "Завод «ПромМеталл»",
+            "description": "Сайт для производителя металлоконструкций. Каталог продукции с техническими характеристиками, калькулятор расчёта стоимости, личный кабинет для дилеров с историей заказов. Интеграция с 1С.",
+            "technologies": "Django, React, 1C-интеграция, PostgreSQL",
+            "completed_date": "2024-09-20",
+            "featured": true,
+            "url": "https://example.com/prommetal",
+            "image_url": "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 3,
+        "fields": {
+            "title": "Девелопер «Новый Дом»",
+            "description": "Имиджевый сайт для девелоперской компании. Презентация жилых комплексов с 3D-турами, ход строительства в реальном времени, онлайн-бронирование квартир. Многоязычная версия для иностранных инвесторов.",
+            "technologies": "Django, Vue.js, Three.js, AWS",
+            "completed_date": "2024-07-10",
+            "featured": true,
+            "url": "https://example.com/noviydom",
+            "image_url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 4,
+        "fields": {
+            "title": "Бетонный завод «БетонСтрой»",
+            "description": "Сайт для завода по производству бетона и ЖБИ. Каталог продукции, онлайн-заказ с расчётом доставки, отслеживание статуса заказа. Личный кабинет для оптовых клиентов.",
+            "technologies": "Django, PostgreSQL, Битрикс24 API",
+            "completed_date": "2024-05-25",
+            "featured": false,
+            "url": "https://example.com/betonstroy",
+            "image_url": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 5,
+        "fields": {
+            "title": "Инжиниринговая компания «ТехноПроект»",
+            "description": "Корпоративный портал для инжиниринговой компании. Портфолио реализованных проектов, раздел вакансий с онлайн-откликом, блог с техническими статьями. SEO-оптимизация под отраслевые запросы.",
+            "technologies": "Django, Elasticsearch, Redis",
+            "completed_date": "2024-03-18",
+            "featured": false,
+            "url": "https://example.com/tehnoproekt",
+            "image_url": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.project",
+        "pk": 6,
+        "fields": {
+            "title": "ГК «СтройИнвест»",
+            "description": "Многофункциональный портал для группы компаний в сфере строительства. Объединяет несколько направлений бизнеса, включает корпоративный раздел, пресс-центр и раздел для инвесторов.",
+            "technologies": "Django, React, PostgreSQL, Docker",
+            "completed_date": "2024-01-30",
+            "featured": false,
+            "url": "https://example.com/stroyinvest",
+            "image_url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop"
+        }
+    },
+    {
+        "model": "core.teammember",
+        "pk": 1,
+        "fields": {
+            "name": "Алексей Петров",
+            "position": "Генеральный директор",
+            "bio": "Основатель студии с 15-летним опытом в веб-разработке. Ранее руководил IT-отделом в крупном строительном холдинге. Отвечает за стратегию развития и работу с ключевыми клиентами.",
+            "email": "a.petrov@stroydigital.ru",
+            "photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
+            "order": 1
+        }
+    },
+    {
+        "model": "core.teammember",
+        "pk": 2,
+        "fields": {
+            "name": "Мария Иванова",
+            "position": "Руководитель проектов",
+            "bio": "Управляет командой разработчиков и координирует работу над проектами. Сертифицированный PMP с опытом работы над крупными B2B-проектами в промышленной сфере.",
+            "email": "m.ivanova@stroydigital.ru",
+            "photo_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces",
+            "order": 2
+        }
+    },
+    {
+        "model": "core.teammember",
+        "pk": 3,
+        "fields": {
+            "name": "Дмитрий Козлов",
+            "position": "Ведущий разработчик",
+            "bio": "Full-stack разработчик с экспертизой в Django и React. Специализируется на сложных интеграциях с 1С и CRM-системами. Автор нескольких open-source библиотек.",
+            "email": "d.kozlov@stroydigital.ru",
+            "photo_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces",
+            "order": 3
+        }
+    },
+    {
+        "model": "core.teammember",
+        "pk": 4,
+        "fields": {
+            "name": "Анна Смирнова",
+            "position": "UI/UX дизайнер",
+            "bio": "Создаёт удобные интерфейсы для сложных B2B-продуктов. Опыт работы с крупными промышленными компаниями помогает понимать потребности конечных пользователей.",
+            "email": "a.smirnova@stroydigital.ru",
+            "photo_url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces",
+            "order": 4
+        }
+    },
+    {
+        "model": "core.teammember",
+        "pk": 5,
+        "fields": {
+            "name": "Сергей Волков",
+            "position": "Менеджер по работе с клиентами",
+            "bio": "Сопровождает клиентов на всех этапах проекта. Ранее работал в сфере продаж строительных материалов, поэтому отлично понимает специфику отрасли.",
+            "email": "s.volkov@stroydigital.ru",
+            "photo_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
+            "order": 5
+        }
+    }
+]

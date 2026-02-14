@@ -1,0 +1,47 @@
+{% load static i18n %}
+<nav class="navbar">
+    <div class="container navbar-content">
+        <a href="{% url 'home' %}" class="logo">
+            {% trans "TechForge" %}
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="{% trans 'Открыть меню' %}">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}" class="nav-link">{% trans "Главная" %}</a></li>
+            <li><a href="{% url 'about' %}" class="nav-link">{% trans "О нас" %}</a></li>
+            <li><a href="{% url 'team' %}" class="nav-link">{% trans "Команда" %}</a></li>
+            <li><a href="{% url 'projects' %}" class="nav-link">{% trans "Проекты" %}</a></li>
+            <li><a href="{% url 'contact' %}" class="nav-link">{% trans "Контакты" %}</a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <div class="language-selector">
+                <button class="lang-btn" aria-label="{% trans 'Выбрать язык' %}">
+                    {{ LANGUAGE_CODE|upper }}
+                </button>
+                <ul class="lang-dropdown">
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_current_language as CURRENT_LANGUAGE %}
+                    {% for lang_code, lang_name in LANGUAGES %}
+                    <li>
+                        <a href="/{{ lang_code }}{{ request.path|slice:'3:' }}"
+                           class="{% if lang_code == CURRENT_LANGUAGE %}active{% endif %}">
+                            {{ lang_name }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <button class="theme-toggle" aria-label="{% trans 'Переключить тему' %}">
+                <span class="theme-icon-light">&#9728;</span>
+                <span class="theme-icon-dark">&#9790;</span>
+            </button>
+        </div>
+    </div>
+</nav>
