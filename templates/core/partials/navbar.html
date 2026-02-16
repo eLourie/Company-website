@@ -12,11 +12,11 @@
         </button>
 
         <ul class="nav-links">
-            <li><a href="{% url 'home' %}" class="nav-link">{% trans "Главная" %}</a></li>
-            <li><a href="{% url 'about' %}" class="nav-link">{% trans "О нас" %}</a></li>
-            <li><a href="{% url 'team' %}" class="nav-link">{% trans "Команда" %}</a></li>
-            <li><a href="{% url 'projects' %}" class="nav-link">{% trans "Проекты" %}</a></li>
-            <li><a href="{% url 'contact' %}" class="nav-link">{% trans "Контакты" %}</a></li>
+            <li><a href="{% url 'home' %}" class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">{% trans "Главная" %}</a></li>
+            <li><a href="{% url 'about' %}" class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}">{% trans "О нас" %}</a></li>
+            <li><a href="{% url 'team' %}" class="nav-link {% if request.resolver_match.url_name == 'team' %}active{% endif %}">{% trans "Команда" %}</a></li>
+            <li><a href="{% url 'projects' %}" class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">{% trans "Проекты" %}</a></li>
+            <li><a href="{% url 'contact' %}" class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">{% trans "Контакты" %}</a></li>
         </ul>
 
         <div class="nav-controls">

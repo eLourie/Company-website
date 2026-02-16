@@ -80,6 +80,22 @@ a:hover {
     color: var(--accent-secondary);
 }
 
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
+.btn:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--accent-primary);
+}
+
 /* Container */
 .container {
     max-width: var(--container-max);
@@ -99,7 +115,16 @@ a:hover {
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
-    transition: background var(--transition-normal);
+    transition: all var(--transition-normal);
+}
+
+.navbar.scrolled {
+    height: calc(var(--navbar-height) - 10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-content {
@@ -142,8 +167,13 @@ a:hover {
     transition: width var(--transition-fast);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: var(--accent-primary);
 }
 
 .nav-controls {
@@ -259,6 +289,19 @@ a:hover {
     background: var(--text-primary);
     border-radius: 2px;
     transition: all var(--transition-fast);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* Hero Section */

@@ -391,6 +391,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 1;
+    pointer-events: none;
 }
 
 .image-reveal:hover::before {

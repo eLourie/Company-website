@@ -135,6 +135,7 @@
             forms.forEach(form => {
                 form.addEventListener('submit', (e) => {
                     const inputs = form.querySelectorAll('.form-input');
+                    const submitBtn = form.querySelector('button[type="submit"]');
                     let isValid = true;
 
                     inputs.forEach(input => {
@@ -148,6 +149,9 @@
 
                     if (!isValid) {
                         e.preventDefault();
+                    } else if (submitBtn) {
+                        submitBtn.classList.add('loading');
+                        submitBtn.disabled = true;
                     }
                 });
             });
@@ -372,7 +376,7 @@
         ParallaxEffect.init();
         // CursorTrail.init(); // Uncomment for cursor trail effect
         LazyImages.init();
-        Card3DTilt.init();
+        // Card3DTilt.init(); // Disabled - simple animations only
         CounterAnimation.init();
         TypingEffect.init();
     });

@@ -22,8 +22,8 @@
         </h1>
         <p class="hero-subtitle animate-on-scroll fade-up" style="animation-delay: 0.3s;">{% trans "TechForge — разрабатываем корпоративные веб-платформы для B2B-компаний, производства, строительства и промышленности." %}</p>
         <div class="hero-buttons animate-on-scroll fade-up" style="animation-delay: 0.5s;">
-            <a href="{% url 'projects' %}" class="btn btn-primary hover-lift ripple glow-on-hover">{% trans "Наши проекты" %}</a>
-            <a href="{% url 'contact' %}" class="btn btn-secondary hover-lift glow-on-hover">{% trans "Обсудить проект" %}</a>
+            <a href="{% url 'projects' %}" class="btn btn-primary">{% trans "Наши проекты" %}</a>
+            <a href="{% url 'contact' %}" class="btn btn-secondary">{% trans "Обсудить проект" %}</a>
         </div>
     </div>
 </section>
@@ -32,17 +32,17 @@
 <section class="section">
     <div class="container">
         <div class="features-grid">
-            <div class="feature-card animate-on-scroll scale-in stagger-animation glow">
+            <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#128200;</div>
                 <h3><span class="counter" data-target="250">0</span>+</h3>
                 <p>{% trans "Реализованных проектов" %}</p>
             </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation glow">
+            <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#128188;</div>
                 <h3><span class="counter" data-target="180">0</span>+</h3>
                 <p>{% trans "Корпоративных клиентов" %}</p>
             </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation glow">
+            <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#11088;</div>
                 <h3><span class="counter" data-target="12">0</span></h3>
                 <p>{% trans "Лет экспертизы" %}</p>
@@ -53,24 +53,24 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title animate-on-scroll fade-up glitch" data-text="{% trans 'Специализация' %}">{% trans "Специализация" %}</h2>
+        <h2 class="section-title animate-on-scroll fade-up">{% trans "Специализация" %}</h2>
         <div class="features-grid">
-            <div class="feature-card animate-on-scroll fade-up stagger-animation card-3d hover-lift rotating-border">
+            <div class="feature-card animate-on-scroll fade-up stagger-animation">
                 <div class="feature-icon bounce-in-hover">&#127970;</div>
                 <h3>{% trans "B2B порталы" %}</h3>
                 <p>{% trans "Корпоративные платформы для взаимодействия с партнёрами, дилерами и клиентами. Личные кабинеты, системы заказов, интеграции." %}</p>
             </div>
-            <div class="feature-card animate-on-scroll fade-up stagger-animation card-3d hover-lift rotating-border">
+            <div class="feature-card animate-on-scroll fade-up stagger-animation">
                 <div class="feature-icon bounce-in-hover">&#127981;</div>
                 <h3>{% trans "Производство и промышленность" %}</h3>
                 <p>{% trans "Сайты для заводов, холдингов и производственных предприятий. Каталоги продукции, онлайн-расчёты, интеграция с 1С." %}</p>
             </div>
-            <div class="feature-card animate-on-scroll fade-up stagger-animation card-3d hover-lift rotating-border">
+            <div class="feature-card animate-on-scroll fade-up stagger-animation">
                 <div class="feature-icon bounce-in-hover">&#127959;</div>
                 <h3>{% trans "Строительство и девелопмент" %}</h3>
                 <p>{% trans "Платформы для строительных компаний и девелоперов. Презентация объектов, 3D-туры, системы бронирования." %}</p>
             </div>
-            <div class="feature-card animate-on-scroll fade-up stagger-animation card-3d hover-lift rotating-border">
+            <div class="feature-card animate-on-scroll fade-up stagger-animation">
                 <div class="feature-icon bounce-in-hover">&#128188;</div>
                 <h3>{% trans "Корпоративные сайты" %}</h3>
                 <p>{% trans "Имиджевые сайты для крупного бизнеса. Многоязычность, сложная структура, интеграция с корпоративными системами." %}</p>
@@ -84,17 +84,17 @@
     <div class="container" style="position: relative; z-index: 2;">
         <h2 class="section-title animate-on-scroll fade-up">{% trans "Наш подход" %}</h2>
         <div class="features-grid">
-            <div class="feature-card animate-on-scroll fade-left stagger-animation hover-lift shimmer">
+            <div class="feature-card animate-on-scroll fade-left stagger-animation">
                 <div class="feature-icon">&#9889;</div>
                 <h3>{% trans "Технологичность" %}</h3>
                 <p>{% trans "Используем передовые технологии: Django, React, Vue.js, Docker, Kubernetes. Микросервисная архитектура для высоконагруженных систем." %}</p>
             </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-lift shimmer">
+            <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon">&#128295;</div>
                 <h3>{% trans "Интеграции" %}</h3>
                 <p>{% trans "Подключаем 1С, SAP, CRM-системы, ERP. API для мобильных приложений. Синхронизация с корпоративными базами данных." %}</p>
             </div>
-            <div class="feature-card animate-on-scroll fade-right stagger-animation hover-lift shimmer">
+            <div class="feature-card animate-on-scroll fade-right stagger-animation">
                 <div class="feature-icon">&#128274;</div>
                 <h3>{% trans "Безопасность" %}</h3>
                 <p>{% trans "Защита данных, шифрование, двухфакторная аутентификация. Соответствие стандартам безопасности и GDPR." %}</p>
@@ -109,7 +109,7 @@
         <h2 class="section-title animate-on-scroll fade-up">{% trans "Избранные проекты" %}</h2>
         <div class="projects-grid">
             {% for project in featured_projects %}
-            <article class="project-card animate-on-scroll fade-up stagger-animation hover-lift image-reveal">
+            <article class="project-card animate-on-scroll fade-up stagger-animation">
                 {% if project.get_image_url %}
                 <img src="{{ project.get_image_url }}" alt="{{ project.title }}" class="project-image">
                 {% else %}
@@ -124,7 +124,7 @@
             {% endfor %}
         </div>
         <div class="section-cta animate-on-scroll fade-up">
-            <a href="{% url 'projects' %}" class="btn btn-primary hover-lift glow-on-hover">{% trans "Все проекты" %}</a>
+            <a href="{% url 'projects' %}" class="btn btn-primary">{% trans "Все проекты" %}</a>
         </div>
     </div>
 </section>
@@ -165,9 +165,9 @@
 
 <section class="section cta-section gradient-animated">
     <div class="container cta-content">
-        <h2 class="animate-on-scroll bounce-in glitch-on-hover">{% trans "Готовы к цифровой трансформации?" %}</h2>
+        <h2 class="animate-on-scroll bounce-in">{% trans "Готовы к цифровой трансформации?" %}</h2>
         <p class="animate-on-scroll fade-up" style="animation-delay: 0.2s;">{% trans "Обсудим ваш проект и подготовим техническое предложение." %}</p>
-        <a href="{% url 'contact' %}" class="btn btn-primary btn-large hover-lift ripple animate-on-scroll fade-up glow-on-hover" style="animation-delay: 0.4s;">{% trans "Начать проект" %}</a>
+        <a href="{% url 'contact' %}" class="btn btn-primary btn-large animate-on-scroll fade-up" style="animation-delay: 0.4s;">{% trans "Начать проект" %}</a>
     </div>
 </section>
 

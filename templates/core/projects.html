@@ -16,12 +16,12 @@
         {% if projects %}
         <div class="projects-grid">
             {% for project in projects %}
-            <article class="project-card {% if project.featured %}featured{% endif %} animate-on-scroll fade-up stagger-animation hover-lift image-reveal">
+            <article class="project-card {% if project.featured %}featured{% endif %} animate-on-scroll fade-up stagger-animation">
                 <div class="project-image-wrapper">
                     {% if project.get_image_url %}
                     <img src="{{ project.get_image_url }}" alt="{{ project.title }}" class="project-image">
                     {% else %}
-                    <div class="project-image-placeholder shimmer"></div>
+                    <div class="project-image-placeholder"></div>
                     {% endif %}
                     {% if project.featured %}
                     <span class="featured-badge">{% trans "Избранное" %}</span>

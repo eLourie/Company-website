@@ -33,9 +33,20 @@
     border-color: var(--accent-primary);
 }
 
+[data-theme="dark"] .section:not(.hero):not(.cta-section) .btn-secondary {
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
 .btn-secondary:hover {
     background: white;
     color: var(--accent-primary);
+}
+
+[data-theme="dark"] .section:not(.hero):not(.cta-section) .btn-secondary:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
 }
 
 .btn-small {
@@ -46,6 +57,33 @@
 .btn-large {
     padding: 16px 40px;
     font-size: 1.1rem;
+}
+
+/* Button loading state */
+.btn.loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+
+.btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: btn-spinner 0.8s linear infinite;
+}
+
+@keyframes btn-spinner {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Cards */
@@ -231,10 +269,26 @@
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+    z-index: 3;
+}
+
+/* Featured project card styles */
+.project-card.featured {
+    border: 2px solid transparent;
+    background:
+        linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+        var(--accent-gradient) border-box;
+}
+
+.project-card.featured:hover {
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
 }
 
 .project-info {
     padding: 25px;
+    position: relative;
+    z-index: 2;
+    background: var(--card-bg);
 }
 
 .project-info h3 {
@@ -426,6 +480,19 @@ textarea.form-input {
     background: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+}
+
+/* Dark mode alerts */
+[data-theme="dark"] .alert-success {
+    background: rgba(40, 167, 69, 0.2);
+    color: #7dcea0;
+    border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+[data-theme="dark"] .alert-error {
+    background: rgba(220, 53, 69, 0.2);
+    color: #f1948a;
+    border: 1px solid rgba(220, 53, 69, 0.3);
 }
 
 /* Contact Info */

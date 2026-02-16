@@ -16,7 +16,7 @@
         {% if team_members %}
         <div class="team-grid">
             {% for member in team_members %}
-            <article class="team-card animate-on-scroll scale-in stagger-animation card-3d hover-lift">
+            <article class="team-card animate-on-scroll scale-in stagger-animation">
                 <div class="team-photo">
                     {% if member.get_photo_url %}
                     <img src="{{ member.get_photo_url }}" alt="{{ member.name }}">
