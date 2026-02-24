@@ -1,20 +1,12 @@
 from django.contrib import admin
-from .models import TeamMember, Project, ContactMessage
-
-
-@admin.register(TeamMember)
-class TeamMemberAdmin(admin.ModelAdmin):
-    list_display = ('name', 'position', 'email', 'order')
-    list_editable = ('order',)
-    search_fields = ('name', 'position')
-    ordering = ('order', 'name')
+from .models import Project, ContactMessage
 
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'technologies', 'completed_date', 'featured')
-    list_editable = ('featured',)
-    list_filter = ('featured', 'completed_date')
+    list_display = ('title', 'category', 'technologies', 'completed_date', 'featured')
+    list_editable = ('featured', 'category')
+    list_filter = ('category', 'featured', 'completed_date')
     search_fields = ('title', 'description', 'technologies')
     ordering = ('-completed_date',)
 

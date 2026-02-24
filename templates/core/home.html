@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans "Главная" %} - {% trans "TechForge" %}{% endblock %}
+{% block title %}{% trans "Главная" %} - {% trans "Synterra" %}{% endblock %}
 
 {% block content %}
 <!-- Particles Background -->
@@ -18,9 +18,9 @@
     </div>
     <div class="container hero-content">
         <h1 class="hero-title animate-on-scroll fade-up">
-            <span class="typing-text" data-text="Цифровые решения для крупного бизнеса">Цифровые решения для крупного бизнеса</span>
+            <span class="typing-text" data-text="Разработка IT-решений для бизнеса">Разработка IT-решений для бизнеса</span>
         </h1>
-        <p class="hero-subtitle animate-on-scroll fade-up" style="animation-delay: 0.3s;">{% trans "TechForge — разрабатываем корпоративные веб-платформы для B2B-компаний, производства, строительства и промышленности." %}</p>
+        <p class="hero-subtitle animate-on-scroll fade-up" style="animation-delay: 0.3s;">{% trans "Synterra — создаём веб-приложения любой сложности и внедряем AI-решения для вашего бизнеса" %}</p>
         <div class="hero-buttons animate-on-scroll fade-up" style="animation-delay: 0.5s;">
             <a href="{% url 'projects' %}" class="btn btn-primary">{% trans "Наши проекты" %}</a>
             <a href="{% url 'contact' %}" class="btn btn-secondary">{% trans "Обсудить проект" %}</a>
@@ -34,18 +34,18 @@
         <div class="features-grid">
             <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#128200;</div>
-                <h3><span class="counter" data-target="250">0</span>+</h3>
+                <h3><span class="counter" data-target="7">0</span>+</h3>
                 <p>{% trans "Реализованных проектов" %}</p>
             </div>
             <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#128188;</div>
-                <h3><span class="counter" data-target="180">0</span>+</h3>
-                <p>{% trans "Корпоративных клиентов" %}</p>
+                <h3><span class="counter" data-target="4">0</span>+</h3>
+                <p>{% trans "Клиентов" %}</p>
             </div>
             <div class="feature-card animate-on-scroll scale-in stagger-animation">
                 <div class="feature-icon text-gradient-animated pulse-icon">&#11088;</div>
-                <h3><span class="counter" data-target="12">0</span></h3>
-                <p>{% trans "Лет экспертизы" %}</p>
+                <h3><span class="counter" data-target="3">0</span></h3>
+                <p>{% trans "Года опыта" %}</p>
             </div>
         </div>
     </div>
@@ -56,24 +56,24 @@
         <h2 class="section-title animate-on-scroll fade-up">{% trans "Специализация" %}</h2>
         <div class="features-grid">
             <div class="feature-card animate-on-scroll fade-up stagger-animation">
-                <div class="feature-icon bounce-in-hover">&#127970;</div>
-                <h3>{% trans "B2B порталы" %}</h3>
-                <p>{% trans "Корпоративные платформы для взаимодействия с партнёрами, дилерами и клиентами. Личные кабинеты, системы заказов, интеграции." %}</p>
+                <div class="feature-icon bounce-in-hover">&#127760;</div>
+                <h3>{% trans "Веб-разработка" %}</h3>
+                <p>{% trans "Сайты от лендингов до высоконагруженных платформ. Любая сложность, современные технологии." %}</p>
             </div>
             <div class="feature-card animate-on-scroll fade-up stagger-animation">
-                <div class="feature-icon bounce-in-hover">&#127981;</div>
-                <h3>{% trans "Производство и промышленность" %}</h3>
-                <p>{% trans "Сайты для заводов, холдингов и производственных предприятий. Каталоги продукции, онлайн-расчёты, интеграция с 1С." %}</p>
+                <div class="feature-icon bounce-in-hover">&#129302;</div>
+                <h3>{% trans "AI и нейросети" %}</h3>
+                <p>{% trans "Обучение, внедрение и разработка AI-решений. Интеграция нейросетей в бизнес-процессы." %}</p>
             </div>
             <div class="feature-card animate-on-scroll fade-up stagger-animation">
-                <div class="feature-icon bounce-in-hover">&#127959;</div>
-                <h3>{% trans "Строительство и девелопмент" %}</h3>
-                <p>{% trans "Платформы для строительных компаний и девелоперов. Презентация объектов, 3D-туры, системы бронирования." %}</p>
+                <div class="feature-icon bounce-in-hover">&#129302;</div>
+                <h3>{% trans "Боты и автоматизация" %}</h3>
+                <p>{% trans "Telegram/Discord боты, автоматизация рутинных процессов, интеграции с внешними сервисами." %}</p>
             </div>
             <div class="feature-card animate-on-scroll fade-up stagger-animation">
-                <div class="feature-icon bounce-in-hover">&#128188;</div>
-                <h3>{% trans "Корпоративные сайты" %}</h3>
-                <p>{% trans "Имиджевые сайты для крупного бизнеса. Многоязычность, сложная структура, интеграция с корпоративными системами." %}</p>
+                <div class="feature-icon bounce-in-hover">&#128187;</div>
+                <h3>{% trans "Backend-разработка" %}</h3>
+                <p>{% trans "Серверная логика на Python и C#. REST API, микросервисы, базы данных." %}</p>
             </div>
         </div>
     </div>
@@ -85,30 +85,30 @@
         <h2 class="section-title animate-on-scroll fade-up">{% trans "Наш подход" %}</h2>
         <div class="features-grid">
             <div class="feature-card animate-on-scroll fade-left stagger-animation">
-                <div class="feature-icon">&#9889;</div>
-                <h3>{% trans "Технологичность" %}</h3>
-                <p>{% trans "Используем передовые технологии: Django, React, Vue.js, Docker, Kubernetes. Микросервисная архитектура для высоконагруженных систем." %}</p>
+                <div class="feature-icon">&#128736;</div>
+                <h3>{% trans "Гибкость" %}</h3>
+                <p>{% trans "Работаем с проектами любой сложности — от простых лендингов до комплексных AI-систем." %}</p>
             </div>
             <div class="feature-card animate-on-scroll scale-in stagger-animation">
-                <div class="feature-icon">&#128295;</div>
-                <h3>{% trans "Интеграции" %}</h3>
-                <p>{% trans "Подключаем 1С, SAP, CRM-системы, ERP. API для мобильных приложений. Синхронизация с корпоративными базами данных." %}</p>
+                <div class="feature-icon">&#129504;</div>
+                <h3>{% trans "AI-экспертиза" %}</h3>
+                <p>{% trans "Глубокое понимание нейросетей и машинного обучения. Практический опыт внедрения AI." %}</p>
             </div>
             <div class="feature-card animate-on-scroll fade-right stagger-animation">
-                <div class="feature-icon">&#128274;</div>
-                <h3>{% trans "Безопасность" %}</h3>
-                <p>{% trans "Защита данных, шифрование, двухфакторная аутентификация. Соответствие стандартам безопасности и GDPR." %}</p>
+                <div class="feature-icon">&#10003;</div>
+                <h3>{% trans "Качество кода" %}</h3>
+                <p>{% trans "Чистый, документированный код. Тестирование, code review, современные практики разработки." %}</p>
             </div>
         </div>
     </div>
 </section>
 
-{% if featured_projects %}
+{% if demo_projects %}
 <section class="section">
     <div class="container">
-        <h2 class="section-title animate-on-scroll fade-up">{% trans "Избранные проекты" %}</h2>
+        <h2 class="section-title animate-on-scroll fade-up">{% trans "Демонстрационные проекты" %}</h2>
         <div class="projects-grid">
-            {% for project in featured_projects %}
+            {% for project in demo_projects %}
             <article class="project-card animate-on-scroll fade-up stagger-animation">
                 {% if project.get_image_url %}
                 <img src="{{ project.get_image_url }}" alt="{{ project.title }}" class="project-image">
@@ -136,28 +136,28 @@
         <h2 class="section-title animate-on-scroll fade-up">{% trans "Технологический стек" %}</h2>
         <div class="features-grid">
             <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
-                <div class="feature-icon rotate-on-hover">&#128640;</div>
+                <div class="feature-icon rotate-on-hover">&#128013;</div>
                 <h4>Python & Django</h4>
             </div>
             <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
-                <div class="feature-icon rotate-on-hover">⚛️</div>
-                <h4>React & Vue.js</h4>
+                <div class="feature-icon rotate-on-hover">&#129302;</div>
+                <h4>PyTorch & TensorFlow</h4>
+            </div>
+            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
+                <div class="feature-icon rotate-on-hover">&#129504;</div>
+                <h4>Anthropic API & OpenAI</h4>
+            </div>
+            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
+                <div class="feature-icon rotate-on-hover">&#128230;</div>
+                <h4>Ollama & ChromaDB</h4>
+            </div>
+            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
+                <div class="feature-icon rotate-on-hover">🐳</div>
+                <h4>Docker & Cloud</h4>
             </div>
             <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
                 <div class="feature-icon rotate-on-hover">&#128190;</div>
                 <h4>PostgreSQL & MongoDB</h4>
-            </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
-                <div class="feature-icon rotate-on-hover">&#9729;</div>
-                <h4>AWS & Azure</h4>
-            </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
-                <div class="feature-icon rotate-on-hover">🐳</div>
-                <h4>Docker & Kubernetes</h4>
-            </div>
-            <div class="feature-card animate-on-scroll scale-in stagger-animation hover-bounce">
-                <div class="feature-icon rotate-on-hover">&#128202;</div>
-                <h4>1C & SAP</h4>
             </div>
         </div>
     </div>
@@ -165,8 +165,8 @@
 
 <section class="section cta-section gradient-animated">
     <div class="container cta-content">
-        <h2 class="animate-on-scroll bounce-in">{% trans "Готовы к цифровой трансформации?" %}</h2>
-        <p class="animate-on-scroll fade-up" style="animation-delay: 0.2s;">{% trans "Обсудим ваш проект и подготовим техническое предложение." %}</p>
+        <h2 class="animate-on-scroll bounce-in">{% trans "Готовы обсудить проект?" %}</h2>
+        <p class="animate-on-scroll fade-up" style="animation-delay: 0.2s;">{% trans "Свяжитесь с нами и расскажите о вашей идее." %}</p>
         <a href="{% url 'contact' %}" class="btn btn-primary btn-large animate-on-scroll fade-up" style="animation-delay: 0.4s;">{% trans "Начать проект" %}</a>
     </div>
 </section>

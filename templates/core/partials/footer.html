@@ -3,8 +3,8 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-section">
-                <h3>{% trans "TechForge" %}</h3>
-                <p>{% trans "Создаём современные сайты для строительных и промышленных компаний." %}</p>
+                <h3>{% trans "Synterra" %}</h3>
+                <p>{% trans "Создаём веб-приложения и внедряем AI-решения для бизнеса." %}</p>
             </div>
 
             <div class="footer-section">
@@ -12,7 +12,6 @@
                 <ul class="footer-links">
                     <li><a href="{% url 'home' %}">{% trans "Главная" %}</a></li>
                     <li><a href="{% url 'about' %}">{% trans "О нас" %}</a></li>
-                    <li><a href="{% url 'team' %}">{% trans "Команда" %}</a></li>
                     <li><a href="{% url 'projects' %}">{% trans "Проекты" %}</a></li>
                     <li><a href="{% url 'contact' %}">{% trans "Контакты" %}</a></li>
                 </ul>
@@ -21,24 +20,21 @@
             <div class="footer-section">
                 <h4>{% trans "Контакты" %}</h4>
                 <ul class="footer-contact">
-                    <li>{% trans "Email" %}: info@techforge.io</li>
-                    <li>{% trans "Телефон" %}: +7 (495) 123-45-67</li>
-                    <li>{% trans "Адрес" %}: {% trans "Москва, Красная площадь, 1" %}</li>
+                    <li>{% trans "Email" %}: <a href="mailto:elouriejob@gmail.com">elouriejob@gmail.com</a></li>
+                    <li>Telegram: <a href="https://t.me/P_Orijev" target="_blank" rel="noopener">@P_Orijev</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h4>{% trans "Соцсети" %}</h4>
+                <h4>{% trans "Связаться" %}</h4>
                 <div class="social-links">
-                    <a href="#" aria-label="Telegram">TG</a>
-                    <a href="#" aria-label="VKontakte">VK</a>
-                    <a href="#" aria-label="WhatsApp">WA</a>
+                    <a href="https://t.me/P_Orijev" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; {% now "Y" %} {% trans "TechForge" %}. {% trans "Все права защищены." %}</p>
+            <p>&copy; {% now "Y" %} {% trans "Synterra" %}. {% trans "Все права защищены." %}</p>
         </div>
     </div>
 </footer>

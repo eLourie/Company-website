@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static i18n %}
 
-{% block title %}{% trans "Контакты" %} - {% trans "TechForge" %}{% endblock %}
+{% block title %}{% trans "Контакты" %} - {% trans "Synterra" %}{% endblock %}
 
 {% block content %}
 <section class="page-header">
@@ -66,45 +66,26 @@
 
                 <div class="contact-info-list">
                     <div class="contact-info-item">
-                        <span class="contact-icon">&#128205;</span>
-                        <div>
-                            <h4>{% trans "Адрес" %}</h4>
-                            <p>{% trans "г. Москва, Красная площадь, д. 1" %}<br>109012, {% trans "Россия" %}</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <span class="contact-icon">&#128222;</span>
-                        <div>
-                            <h4>{% trans "Телефон" %}</h4>
-                            <p>+7 (495) 123-45-67</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
                         <span class="contact-icon">&#9993;</span>
                         <div>
                             <h4>{% trans "Email" %}</h4>
-                            <p>info@techforge.io</p>
+                            <p><a href="mailto:elouriejob@gmail.com">elouriejob@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div class="contact-info-item">
-                        <span class="contact-icon">&#128337;</span>
+                        <span class="contact-icon">&#128172;</span>
                         <div>
-                            <h4>{% trans "Режим работы" %}</h4>
-                            <p>{% trans "Понедельник — Пятница: 9:00 — 18:00" %}<br>
-                               {% trans "Суббота — Воскресенье: Выходной" %}</p>
+                            <h4>Telegram</h4>
+                            <p><a href="https://t.me/P_Orijev" target="_blank" rel="noopener">@P_Orijev</a></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-social">
-                    <h4>{% trans "Мы в соцсетях" %}</h4>
+                    <h4>{% trans "Связаться" %}</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="Telegram">TG</a>
-                        <a href="#" aria-label="VKontakte">VK</a>
-                        <a href="#" aria-label="WhatsApp">WA</a>
+                        <a href="https://t.me/P_Orijev" target="_blank" rel="noopener" aria-label="Telegram">TG</a>
                     </div>
                 </div>
             </div>
@@ -112,28 +93,4 @@
     </div>
 </section>
 
-<section class="map-section">
-    <div id="yandex-map" style="width: 100%; height: 400px;"></div>
-</section>
-
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш-api-ключ&lang=ru_RU" type="text/javascript"></script>
-<script type="text/javascript">
-    ymaps.ready(init);
-    function init() {
-        var myMap = new ymaps.Map("yandex-map", {
-            center: [55.753994, 37.620940],
-            zoom: 16
-        });
-
-        var myPlacemark = new ymaps.Placemark([55.753994, 37.620940], {
-            hintContent: '{% trans "TechForge" %}',
-            balloonContent: '{% trans "Веб-студия TechForge" %}<br>{% trans "г. Москва, Красная площадь, д. 1" %}'
-        }, {
-            preset: 'islands#redDotIcon'
-        });
-
-        myMap.geoObjects.add(myPlacemark);
-        myMap.behaviors.disable('scrollZoom');
-    }
-</script>
 {% endblock %}
